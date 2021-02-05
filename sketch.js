@@ -1,7 +1,11 @@
-var windowWidth = 1000; // 400
-var windowHeight = 450; // 450
+const windowWidth = 1000; // 400
+const windowHeight = 450; // 450
 var curTetromino;
 var gameBoard;
+
+var date = new Date();
+const cur_time_num = date.now();
+Math.seedrandom(`${cur_time_num}`);
 
 function preload(){
   // put preload code here
